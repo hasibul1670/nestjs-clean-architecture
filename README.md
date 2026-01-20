@@ -666,9 +666,6 @@ curl -X GET http://localhost:4000/profile/all \
 - **Route Protection**: JWT guards on sensitive endpoints
 - **Admin Controls**: Separate endpoints for administrative functions
 
-## 👨‍💻 Authors
-
-- **Jerry Lucas** - _Current Maintainer_ - [GitHub](https://github.com/CollatzConjecture)
 
 ## 📄 License
 
