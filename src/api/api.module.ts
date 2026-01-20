@@ -1,4 +1,5 @@
 import { AuthController } from '@api/controllers/auth.controller';
+import { CategoryController } from '@api/controllers/category.controller';
 import { HelloController } from '@api/controllers/hello.controller';
 import { ProfileController } from '@api/controllers/profile.controller';
 import { ApplicationModule } from '@application/application.module';
@@ -8,7 +9,7 @@ import { Module } from '@nestjs/common';
 
 @Module({
   imports: [ApplicationModule],
-  controllers: [AuthController, ProfileController, HelloController],
+  controllers: [AuthController, ProfileController, CategoryController, HelloController],
   providers: [ResponseService, ResponseInterceptor],
 })
 export class ApiModule { }

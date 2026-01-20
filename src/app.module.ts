@@ -1,5 +1,6 @@
 import { ApiModule } from '@api/api.module';
 import { AuthController } from '@api/controllers/auth.controller';
+import { CategoryController } from '@api/controllers/category.controller';
 import { HelloController } from '@api/controllers/hello.controller';
 import { ProfileController } from '@api/controllers/profile.controller';
 import { ApplicationModule } from '@application/application.module';
@@ -50,6 +51,6 @@ export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
       .apply(LoggerMiddleware)
-      .forRoutes(ProfileController, AuthController);
+      .forRoutes(ProfileController, AuthController, CategoryController);
   }
 }
